@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /SafeDriving/
+RewriteRule ^(.+)-(.+)\.html$ ./index.php?type=$1&page=$2  [L]
+RewriteRule ^(.+)\.html$ ./index.php?type=$1  [L]
